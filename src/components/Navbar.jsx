@@ -10,7 +10,7 @@ const Navbar = () => {
         <header className="container mx-auto px-6 py-4 flex items-center justify-between">
         <Logo />
         <Nav />
-        <Button>Sign up</Button>
+        <Button size="sm">Contact me</Button>
         </header>
     );
 }
