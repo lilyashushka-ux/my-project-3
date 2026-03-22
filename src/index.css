@@ -33,6 +33,12 @@
     }
 }
 @layer components {
+    .glass{
+        @apply border border-white/15 bg-background/10 backdrop-blur 
+    }
+    .glow-text{
+        text-shadow: 0 0 30px color-mix(in srgb, var(--color-blue-600)50%, transparent);
+    }
 
 }
 @layer utilities {
@@ -40,8 +46,9 @@
         font-family: "Playfair Display", serif;
      }
      .font-digital {
-        font-family: var(--font-doto);
+    font-family: "Doto", sans-serif;
      }
+   
      @keyframes fade-in {
         from{
             opacity: 0;
@@ -56,5 +63,14 @@
      }
      .animate-fade-in{
       animation: fade-in 0.8s ease-out both;
+     }
+       .animation-delay-100{
+        animation-delay: 200ms;
+     }
+      .animation-delay-200{
+        animation-delay: 400ms;
+     }
+      .animation-delay-300{
+        animation-delay: 600ms;
      }
 }

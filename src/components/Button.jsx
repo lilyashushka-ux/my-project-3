@@ -4,7 +4,7 @@ const Button = ({
     children,
 }) => {
     const baseClasses =
-        "rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-foreground bg-blue-600 text-white hover:bg-blue-600/90 shadow-lg shadow-blue-600/25";
+        " flex items-center gap-2 rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-foreground  bg-blue-600 text-white hover:bg-blue-600/90 shadow-lg shadow-blue-600/25";
 
     const sizeClasses = {
         sm: 'px-4 py-2 text-sm',
