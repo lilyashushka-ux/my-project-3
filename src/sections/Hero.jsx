@@ -2,6 +2,7 @@ import { GoArrowRight } from "react-icons/go";
 import Button  from "../components/Button";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
+import AnimatedBorderButton from "../components/AnimatedBorderButton";
 
 
 
@@ -32,6 +33,10 @@ const Hero = () =>{
                         <Button size="lg">
                             Contact Me <GoArrowRight />
                         </Button>
+                        <AnimatedBorderButton>
+                            <MdOutlineFileDownload />
+                            Dowload CV
+                        </AnimatedBorderButton>
                     </div>
                   </div>
                   {/*Right Column*/}

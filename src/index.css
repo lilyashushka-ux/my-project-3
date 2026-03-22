@@ -64,6 +64,26 @@
      .animate-fade-in{
       animation: fade-in 0.8s ease-out both;
      }
+      .group:hover .animated-border-path {
+  animation: animated-border 1.5s linear infinite;
+}
+.animated-border-path {
+  stroke-dasharray: 120 300;
+  stroke-dashoffset: 0;
+}
+
+.group:hover {
+  background-color: color-mix(in srgb, var(--color-blue-600) 15%, transparent);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 0 20px color-mix(in srgb, var(--color-blue-600) 40%, transparent);
+}
+
+@keyframes animated-border {
+  to {
+    stroke-dashoffset: -420;
+  }
+}
+        /*Delay utilites*/
        .animation-delay-100{
         animation-delay: 200ms;
      }
