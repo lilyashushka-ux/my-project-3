@@ -4,7 +4,11 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
 
-
+const SocialIcon = [
+ {icon : FaGithub, href : '#'},
+ {icon : FaLinkedin, href : '#'},
+ {icon : FaTelegram, href : '#'}
+];
 
 
 const Hero = () =>{
@@ -37,6 +41,15 @@ const Hero = () =>{
                             <MdOutlineFileDownload />
                             Dowload CV
                         </AnimatedBorderButton>
+                    </div>
+                    {/*Social Links*/}
+                    <div className="flex items-center gap-4 animate-fade-in animation-delay-200">
+                        <span className="text-sm text-blue-600 ">Follow Me</span>
+                        {SocialIcon.map((social, index) => 
+                      ( <a href={social.href} key={index} className="glass p-2 rounded-full hover:text-blue-600 transition-all duration-300">
+                            {<social.icon className='w-5 h-5'/>}
+                         </a>)
+                        )}
                     </div>
                   </div>
                   {/*Right Column*/}
