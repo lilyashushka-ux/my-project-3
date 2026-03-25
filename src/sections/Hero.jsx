@@ -14,7 +14,7 @@ const SocialIcon = [
 const Hero = () =>{
     return(
         <section className="min-h-screen flex items-center">
-            <div className="container mx-auto px-6 pt-32 pb-20">
+            <div className="container mx-auto pt-16  px-6 md:pt-32 pb-20">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                   {/*Left Column*/}
                   <div className="space-y-8">
