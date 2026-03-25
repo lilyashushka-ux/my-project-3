@@ -53,7 +53,14 @@ const Hero = () =>{
                     </div>
                   </div>
                   {/*Right Column*/}
-                  <div></div>
+                  <div className="animate-fade-in animation-delay-300">
+                    <div className="relative max-w-md">
+                        <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-600/30 via-transparent to-blue-600/10 blur-2xl animate-pulse" />
+                    <div className="relative glass p-2 rounded-3xl">
+                        <img src="/Alex.jpg" alt="Alex" className="w-full aspect-4/5 object-cover rounded-2xl " />
+                    </div>
+                    </div>
+                  </div>
                 </div>
             </div>
         </section>
